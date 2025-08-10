@@ -1,0 +1,284 @@
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: #fffafc;
+  color: #6d214f;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav {
+  background-color: beige;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.topnav a {
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 17px;
+  color: black;
+  border-radius: 8px;
+}
+
+.topnav a.active {
+  background: pink;
+  color: white;
+  font-weight: 600;
+}
+
+.topnav a:hover {
+  background: grey;
+  color: white;
+}
+
+.topnav input {
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  outline-color: pink;
+  min-width: 180px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.products-container {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff0f6;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(255, 192, 203, 0.3);
+  width: 220px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  color: #b33951;
+}
+
+.product-card img,
+.product-card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.product-card button {
+  background-color: #ff4d88;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  width: 100%;
+}
+
+.product-card button:hover {
+  background-color: #ff1a66;
+}
+
+#cart-display {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff0f6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(255, 192, 203, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #b33951;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: #ffe6f0;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border-radius: 12px;
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-item > div {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cart-item button {
+  background: #ff6b81;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.cart-item button:hover {
+  background: #d6456b;
+}
+
+#coupon-code {
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  width: 200px;
+  font-size: 16px;
+}
+
+#apply-coupon {
+  background-color: #ff4d88;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#apply-coupon:hover {
+  background-color: #ff1a66;
+}
+
+#cart-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999;
+}
+
+#cart-notification.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cart-notification img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+footer {
+  background: transparent;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* Or 'Dancing Script' for cursive style */
+  font-size: 14px;
+  color: #b0b0b0; /* Light grey */
+}
+
+footer p {
+  margin: 0;
+}
+
+.done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #fffafc;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* keeps layout nice on small screens */
+}
+
+.done h4 {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #ff4d88;
+  font-size: 1.2em;
+}
+
+.made {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ff4d88;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 25px;
+  font-size: 0.95em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.made:hover {
+  background-color: #ff1a66;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(255, 26, 102, 0.3);
+}
+
+.made i {
+  font-size: 1.2em;
+}
+.segoss-description {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff0f6; /* soft pink */
+  border-radius: 20px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 15px rgba(255, 192, 203, 0.4);
+  font-family: "Poppins", sans-serif;
+  color: #6d214f; /* warm pinkish-purple */
+  text-align: center;
+  line-height: 1.5;
+}
+
+.segoss-description h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #ff4d88;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px #ffc0cb;
+}
+
+.segoss-description p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #833471;
+}

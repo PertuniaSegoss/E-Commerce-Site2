@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Segoss Hair Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <input type="text" placeholder="Search.." id="searchInput" />
+    </div>
+    <section id="home"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+
+    <section class="segoss-description">
+      <h2>Welcome to Segoss Hair</h2>
+      <p>
+        At Segoss Hair, we bring you premium, hand-selected hair extensions and
+        beautiful styles crafted with love. Our mission is to help you feel
+        confident, radiant, and uniquely you — because every strand matters!
+      </p>
+    </section>
+
+    <div class="products-container" id="productsContainer"></div>
+
+    <div id="cart-display">
+      <h2>Your Cart</h2>
+      <input type="text" id="coupon-code" placeholder="Enter coupon code" />
+      <button id="apply-coupon">Apply Coupon</button>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <div class="done">
+      <h4>Contact</h4>
+      <button class="made" onclick="goToInstagram()">
+        <i class="fab fa-instagram"></i> <strong>Instagram</strong>
+      </button>
+      <button class="made" id="sendEmail">
+        <i class="fas fa-envelope"></i> <strong>Email</strong>
+      </button>
+      <button class="made" onclick="goToWhatsapp()">
+        <i class="fab fa-whatsapp"></i> <strong>WhatsApp</strong>
+      </button>
+    </div>
+
+    <div id="cart-notification">
+      <img id="notif-img" src="" alt="Product" />
+      <div id="notif-text"></div>
+    </div>
+    <footer>
+      <p>© <span id="year"></span> Segoss Hair. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
